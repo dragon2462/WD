@@ -8,7 +8,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
-	background-color: white;
+	background-color: black;
 }
 
 header {
@@ -21,6 +21,21 @@ header {
 	justify-content: space-between;
 	padding: 10px 20px;
 }
+.iframe-container {
+	border: 5px solid #ccc;
+	border-radius: 5px;
+	overflow: hidden;
+	border-color: red;
+	height: 360px;
+	width: 360px;;
+  }
+  
+  .iframe-container iframe {
+	width: 100%;
+	height: 100%;
+	
+  }
+  
 
 .logo img {
 	width: 240px;
@@ -41,7 +56,7 @@ header {
   */
 .dropdown-content{
  display: none;
- position: absolute;
+ position:inherit;
  background-color: white;
  min-width: 160px;
  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -54,13 +69,13 @@ header {
  text-decoration: none;
 }
 .dropdown-content a:hover{
-background-color: black;
+background-color: darkgray;
 }
 .dropdown:hover .dropdown-content{
 display: block;
 }
 .dropdown:hover .dropbtn{
-background-color: black;
+background-color: white;
 }
 .container {
 	display: inline-block;
@@ -87,3 +102,23 @@ background-color: black;
   .change .bar3 {
 	transform: translate(0, -11px) rotate(45deg);
   }
+  .box a{
+	display: flex;
+	width: 35px;
+	border-style:inset;
+	border-color: black;
+	background-color: black;
+	text-align: center;
+	width:150px;
+	height: 150px;
+	background-color: black;
+	
+  }
+  
+  .box img {
+	max-width: 100%;
+	max-height: 100%;
+  }
+  
+  
+  
