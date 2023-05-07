@@ -5,8 +5,8 @@ section{
   
 }
 body {
-	margin: 0;
-	padding: 0;
+	margin: 24px;
+	padding: 1px;
 	font-family: sans-serif;
 	background-color: black;
 }
@@ -17,9 +17,11 @@ header {
 	font-family: Times New Roman;
 	font-size: 18px;
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 	padding: 10px 20px;
+	border-style: groove;
 }
 .iframe-container {
 	border: 5px solid #ccc;
@@ -39,7 +41,7 @@ header {
 
 .logo img {
 	width: 240px;
-	border-style:groove; /* boxing style*/
+	/*border-style:groove;boxing style*/
 	background-color: black;
 }
 /*.dropbtn{
@@ -52,15 +54,16 @@ header {
   .dropdown{
 	position: relative;
 	display: inline-block;
-  }
-  */
+  }*/
+  
 .dropdown-content{
  display: none;
- position:inherit;
+ position:absolute;
  background-color: white;
- min-width: 160px;
+ max-width: 85px;
  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
  z-index: 1;
+ 
 }
 .dropdown-content a{
  color: black;
@@ -78,16 +81,18 @@ display: block;
 background-color: white;
 }
 .container {
-	display: inline-block;
+	display: block;
 	cursor: pointer;
+	font-size: 20px;
   }
   
   .bar1, .bar2, .bar3 {
-	width: 35px;
+	width: 40px;
 	height: 5px;
 	background-color: white;
 	margin: 6px 0;
 	transition: 0.4s;
+	border-spacing: 12px;
   }
   
   /* Rotate first bar */
