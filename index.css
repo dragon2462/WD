@@ -27,6 +27,13 @@ section{
   p1{
 background-color: yellow;
   }
+  p3{
+	align-items: none;
+	justify-content: space-evenly;
+	display: flex;
+	max-width:fit-content;
+	max-height: fit-content;
+  }
 .social-media{
 	padding: 10px;
 	display: flex;
