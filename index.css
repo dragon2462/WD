@@ -5,7 +5,7 @@ section{
   
 }
 body {
-	margin: 25px;
+	margin: 10x;
 	padding: 10px;
 	font-family: sans-serif;
 	background-color: black;
@@ -176,6 +176,43 @@ background-color: white;
 	max-width: 100%;
 	max-height: 100%;
   }
+  nav {
+	display: none; /* hide the navigation menu by default */
+  }
   
+  @media (min-width: 768px) {
+	/* show the navigation menu for screens wider than 768px */
+	nav {
+	  display: block;
+	}
+  }
   
+  .mobile-menu {
+	display: block; /* show the hamburger menu icon by default */
+  }
   
+  @media (min-width: 768px) {
+	/* hide the hamburger menu icon for screens wider than 768px */
+	.mobile-menu {
+	  display: flex;
+	}
+  }
+  #myBtn {
+	display: flex;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: #333;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+	background-color: #555;
+  }  
