@@ -2,18 +2,23 @@ body {
 	margin: 10px;
 	padding: 10px;
 	font-family: sans-serif;
-	background-color: rgb(247, 243, 243);
+	background-color: rgb(150, 146, 146);
+	background-image: url("img/AI-is-coming-—-and-HR-is-not-prepared.jpg");
+	background-blend-mode: lighten;
 }
 h1{
   color: red;
   font-family: Times New Roman;
   font-size: 36px;
+  background: fixed;
+
 }
 p{
 font-family: Times New Roman;
 font-size: 24px;
-color: goldenrod;
+color: black;
 align-items: left;
+background-color: red;
 }
 
 
@@ -36,6 +41,7 @@ header {
 	width: 240px;
 	/*border-style:groove;boxing style*/
 	background-color: black;
+	opacity:unset;
 }
 /*.dropbtn{
 	background-color: black;
@@ -117,6 +123,9 @@ background-color: white;
 	height:250px;
 	border-radius:12px;
     background:var(--main-decor-color);
+	border-style: ridge;
+	border-color: black;
+	background-color: black;
 }
 
 .card img{
@@ -135,11 +144,12 @@ background-color: white;
 }
 
 .card a{
-	text-decoration: none;
+	text-decoration:underline;
+	color:red;
 }
 
 .card .work-content:hover{
-    color:#202020;
+    color:white;
 }
 
 .card:hover{

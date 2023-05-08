@@ -1,18 +1,13 @@
-section{
-  color: red;
-  font-family: Times New Roman;
-  font-size: 36px;
-  
-}
+
 body {
 	margin: 10x;
 	padding: 10px;
 	font-family: sans-serif;
-	background-color: black;
+	background-color: #1a1a1a;
 }
 
 header {
-	background-color:black;
+	background-color: black;
 	color: black;
 	font-family: Times New Roman;
 	font-size: 18px;
@@ -23,6 +18,15 @@ header {
 	padding: 10px 20px;
 	border-style: groove;
 }
+section{
+	color: red;
+	font-family: Times New Roman;
+	font-size: 36px;
+	
+  }
+  p1{
+background-color: yellow;
+  }
 .social-media{
 	padding: 10px;
 	display: flex;
@@ -188,7 +192,7 @@ background-color: white;
   }
   
   .mobile-menu {
-	display: block; /* show the hamburger menu icon by default */
+	display: inherit; /* show the hamburger menu icon by default */
   }
   
   @media (min-width: 768px) {
