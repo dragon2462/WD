@@ -3,7 +3,13 @@ body {
 	margin: 10x;
 	padding: 10px;
 	font-family: sans-serif;
-	background-color: #1a1a1a;
+	background-image: url("img/What_is_Information_Technology.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-blend-mode:lighten;
+
 }
 
 header {
@@ -19,28 +25,31 @@ header {
 	border-style: groove;
 }
 section{
-	color: red;
+	color: white;
 	font-family: Times New Roman;
 	font-size: 36px;
-	
+	background-blend-mode: darken;
   }
   p1{
-background-color: yellow;
+background-color: black;
   }
   p3{
-	align-items: none;
-	justify-content: space-evenly;
+	align-items:stretch;
+	justify-content: space-between;
 	display: flex;
 	max-width:fit-content;
 	max-height: fit-content;
+	
   }
 .social-media{
-	padding: 10px;
+	padding: 1px;
+	margin:	1px;
 	display: flex;
-	position: center;
+    flex-direction: row;
     align-items: space-around;
-	justify-content:center;
-	color: white;
+	justify-content: center;
+	
+	
 }
 
 .social-media a {
@@ -59,14 +68,20 @@ background-color: yellow;
 	color: var(--main-decor-color);
 	text-shadow: 0 0 50px var(--main-decor-color);
 }
-
+.i.fab.fa-twitter {
+	color: blue;
+}
+.i.fab.fa-github{
+	color: black;
+}
 .iframe-container {
 	border: 5px solid #ccc;
 	border-radius: 5px;
-	overflow: hidden;
-	border-color: red;
+	overflow:inherit;
 	height: 360px;
 	width: 360px;;
+	position: relative;
+	margin: 10px;
   }
   
   .iframe-container iframe {
@@ -81,6 +96,7 @@ background-color: yellow;
 	/*border-style:groove;boxing style*/
 	background-color: black;
 }
+
 /*.dropbtn{
 	background-color: black;
 	color: black;
@@ -108,8 +124,11 @@ background-color: yellow;
  display: block;
  text-decoration: none;
 }
-.dropdown-content a:hover{
-background-color: darkgray;
+.dropdown-content a:hover::before{
+color: darkgray;
+}
+.dropdown-content a:hover::after{
+	color: goldenrod;
 }
 .dropdown:hover .dropdown-content{
 display: block;
@@ -117,6 +136,12 @@ display: block;
 .dropdown:hover .dropbtn{
 background-color: white;
 }
+/*.dropdown::before:hover .dropbtn{
+background-color: white;	
+}
+.dropdown::after .dropbtn{
+	background-color: red;
+}*/
 .container {
 	display: block;
 	cursor: pointer;
