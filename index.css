@@ -4,12 +4,11 @@ body {
 	padding: 10px;
 	font-family: sans-serif;
 	background-image: url("img/What_is_Information_Technology.jpeg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
+background-size: cover;
+	background-position:center;
+	background-attachment: absolute;
 	background-blend-mode:lighten;
-
+	background-repeat: no-repeat;
 }
 
 header {
@@ -41,39 +40,34 @@ background-color: black;
 	max-height: fit-content;
 	
   }
-.social-media{
+  .social-media {
 	padding: 1px;
-	margin:	1px;
+	margin: 1px;
 	display: flex;
-    flex-direction: row;
-    align-items: space-around;
+	flex-direction: row;
+	align-items: center;
 	justify-content: center;
-	
-	
+	color: white;
 }
 
 .social-media a {
-    margin: 10px;
-    font-size: 2rem;
-    text-align:center;
-    display: inline-block;
+	margin: 10px;
+	font-size: 2rem;
+	text-align: center;
+	display: inline-block;
 	color: var(--main-fonts-color);
 }
 
-.social-media a i{
+.social-media a i {
 	cursor: pointer;
 }
 
-.social-media  a:hover {
+.social-media a:hover {
 	color: var(--main-decor-color);
 	text-shadow: 0 0 50px var(--main-decor-color);
 }
-.i.fab.fa-twitter {
-	color: blue;
-}
-.i.fab.fa-github{
-	color: black;
-}
+
+
 .iframe-container {
 	border: 5px solid #ccc;
 	border-radius: 5px;
@@ -124,12 +118,10 @@ background-color: black;
  display: block;
  text-decoration: none;
 }
-.dropdown-content a:hover::before{
-color: darkgray;
+.dropdown-content a:hover{
+background-color: darkgray;
 }
-.dropdown-content a:hover::after{
-	color: goldenrod;
-}
+
 .dropdown:hover .dropdown-content{
 display: block;
 }
@@ -242,8 +234,8 @@ background-color: white;
 	font-size: 18px;
 	border: none;
 	outline: none;
-	background-color: #333;
-	color: white;
+	background-color: white;
+	color: black;
 	cursor: pointer;
 	padding: 15px;
 	border-radius: 4px;

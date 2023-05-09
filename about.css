@@ -14,7 +14,7 @@ h1{
   background: fixed;
 
 }
-p{
+p1{
 font-family: Times New Roman;
 font-size: 24px;
 color: black;
@@ -165,8 +165,8 @@ background-color: white;
 	font-size: 18px;
 	border: none;
 	outline: none;
-	background-color: #333;
-	color: white;
+	background-color: white;
+	color: black;
 	cursor: pointer;
 	padding: 15px;
 	border-radius: 4px;
