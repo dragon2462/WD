@@ -2,8 +2,7 @@ body{
   background-color: white;
 	margin: 10px;
 	padding: 10px;
-	font-family: sans-serif;
-	
+	font-family: Times New Roman;
 }
 
 section{
@@ -111,4 +110,4 @@ header {
   
   #myBtn:hover {
 	background-color: #555;
-  }  
+  } 
