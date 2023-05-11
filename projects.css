@@ -20,11 +20,11 @@ body {
 	margin: 10px;
 	padding: 10px;
 	font-family: sans-serif;
-	background-color: goldenrod;
+	background-color: aquamarine;
 }
 
 header {
-	background-color:black;
+	background-color: black;
 	color: black;
 	font-family: Times New Roman;
 	font-size: 18px;
@@ -32,10 +32,12 @@ header {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	padding: 10px 20px;
+	padding: 10px 25px;
 	border-style: groove;
 }
-
+header .dropdown-content{
+	position: absolute, right;
+}
 .logo img {
 	width: 240px;
 	/*border-style:groove;boxing style*/
