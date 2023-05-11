@@ -244,3 +244,23 @@ background-color: white;
   #myBtn:hover {
 	background-color: #555;
   }  
+  #cookie-consent-message {
+	background-color: #f8d7da;
+	color: #721c24;
+	padding: 10px;
+	margin-bottom: 10px;
+  }
+  
+  #cookie-consent-close {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+  }
+  
+  #cookie-consent-close:hover {
+	background-color: #0069d9;
+  }
+  
+  

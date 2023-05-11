@@ -34,3 +34,20 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+// Get the message and close button elements
+const message = document.getElementById('cookie-consent-message');
+const closeBtn = document.getElementById('cookie-consent-close');
+
+// Check if the user has already closed the message
+if (localStorage.getItem('cookie-consent-closed') === 'true') {
+  message.style.display = 'none'; // hide the message if already closed
+} else {
+  message.style.display = 'block'; // show the message if not closed yet
+}
+
+// Add event listener to the close button
+closeBtn.addEventListener('click', function() {
+  localStorage.setItem('cookie-consent-closed', 'true'); // set the message to closed in localStorage
+  message.style.display = 'none'; // hide the message
+});
+
