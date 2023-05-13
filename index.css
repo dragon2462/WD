@@ -23,6 +23,14 @@ header {
 	padding: 10px 20px;
 	border-style: groove;
 }
+h1{
+	font-size: 48px;
+	color:white;
+	font-style: bold;
+	text-shadow: #555;
+	text-decoration: solid;
+	font-family: Times New Roman;
+}
 section{
 	color: white;
 	font-family: Times New Roman;
@@ -253,5 +261,6 @@ background-color: white;
 	padding:1px; 
 	background-color:#f0f0f0; 
 	text-align:center; 
+	justify-content: space-between;
 	z-index:1000;
   }
