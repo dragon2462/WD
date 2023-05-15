@@ -252,15 +252,27 @@ background-color: white;
   #myBtn:hover {
 	background-color: #555;
   }  
-  .cookie-consent-message{
-border-style: groove;
-	padding: 12px;
-	margin: 12px; 
-	background-color:#f0f0f0; 
-	text-align:left; 
-	justify-content: space-between;
-	
-  }
+  #cookie-consent-message{
+    background-color:#f0f0f0; 
+    text-align:left; 
+    margin:1px;
+    padding: 1px;
+    display: flex;
+    width: 400px; /* set the width to 200px */
+	border-style: ridge;
+	border-color:black;
+}
+
+.cookie-consent-button{
+	padding:5px 10px; 
+	background-color:#4CAF50; 
+	color:#fff; 
+	border:none; 
+	border-radius:3px; 
+	font-size:14px; 
+	cursor:pointer;
+}
+
   @tailwind base;
 @tailwind components;
 @tailwind utilities;
