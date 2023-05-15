@@ -56,30 +56,31 @@ header {
 	display: inline-block;
   }*/
   
-.dropdown-content{
- display: none;
- position:absolute;
- background-color: white;
- max-width: 85px;
- box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
- z-index: 1;
- 
-}
-.dropdown-content a{
- color: black;
- padding: 12px 16px;
- display: block;
- text-decoration: none;
-}
-.dropdown-content a:hover{
-background-color: darkgray;
-}
-.dropdown:hover .dropdown-content{
-display: block;
-}
-.dropdown:hover .dropbtn{
-background-color: white;
-}
+  .dropdown-content{
+	display: none;
+	position:absolute;
+	background-color: white;
+	max-width: 85px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	
+   }
+   .dropdown-content a{
+	color: black;
+	padding: 12px 16px;
+	display: block;
+	text-decoration: none;
+   }
+   .dropdown-content a:hover{
+   background-color: darkgray;
+   }
+   
+   .dropdown:hover .dropdown-content{
+   display: block;
+   }
+   .dropdown:hover .dropbtn{
+   background-color: white;
+   }
 .container {
 	display: block;
 	cursor: pointer;
