@@ -37,7 +37,7 @@ section{
 	font-size: 36px;
 	background-blend-mode: darken;
   }
-  p1{
+  .message{
 background-color: black;
 color: red;
   }
@@ -260,28 +260,33 @@ background-color: white;
   }
   
   #myBtn:hover {
-	background-color: #555;
+	background-color: black;
   }  
-  #cookie-consent-message{
-    background-color:#f0f0f0; 
-    text-align:left; 
-    margin:1px;
-    padding: 1px;
-    display: flex;
-    width: 400px; /* set the width to 200px */
+  #cookie-consent-message {
+	background-color: #f0f0f0;
+	text-align: left;
+	position:fixed;
+	bottom: 20px;
+	left: 20px;
+	padding: 1px;
+	width: 100px;
+	height: 185px;
+	max-width: calc(100% - 40px);
 	border-style: ridge;
-	border-color:green;
-}
-
-.cookie-consent-button{
-	padding:5px 10px; 
-	background-color:#4CAF50; 
-	color:#fff; 
-	border-style:inset; 
-	border-radius:3px; 
-	font-size:14px; 
-	cursor:pointer;
-}
+	border-color: green;
+	z-index: 9999;
+  }
+  
+  .cookie-consent-button {
+	padding: 5px 10px;
+	background-color: #4CAF50;
+	color: #fff;
+	border-style: inset;
+	border-radius: 3px;
+	font-size: 14px;
+	cursor: pointer;
+  }
+  
 
   @tailwind base;
 @tailwind components;
