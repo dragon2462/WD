@@ -39,6 +39,7 @@ section{
   }
   p1{
 background-color: black;
+color: red;
   }
   p3{
 	align-items:stretch;
@@ -64,20 +65,29 @@ background-color: black;
 	text-align: center;
 	display: inline-block;
 	color: var(--main-fonts-color);
-}
-
-.social-media a i {
+  }
+  
+  .social-media a[href="https://www.twitter.com/paulzheng_"] i.fab.fa-twitter {
+	color: #1DA1F2 !important; /* change this to the desired color */
+  }
+  
+  .social-media a[href="https://www.github.com/dragon2462"] i.fab.fa-github {
+	color: #181717 !important; /* change this to the desired color */
+  }
+  
+  .social-media a i {
 	cursor: pointer;
-}
-
-.social-media a:hover {
+  }
+  
+  .social-media a:hover {
 	color: var(--main-decor-color);
 	text-shadow: 0 0 50px var(--main-decor-color);
-}
+  }
+  
 
 
 .iframe-container {
-	border: 5px solid #ccc;
+	border: 5px solid red;
 	border-radius: 5px;
 	overflow:inherit;
 	height: 360px;
@@ -260,14 +270,14 @@ background-color: white;
     display: flex;
     width: 400px; /* set the width to 200px */
 	border-style: ridge;
-	border-color:black;
+	border-color:green;
 }
 
 .cookie-consent-button{
 	padding:5px 10px; 
 	background-color:#4CAF50; 
 	color:#fff; 
-	border:none; 
+	border-style:inset; 
 	border-radius:3px; 
 	font-size:14px; 
 	cursor:pointer;

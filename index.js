@@ -48,6 +48,6 @@ if (localStorage.getItem('cookie-consent-closed') === 'true') {
   var message = document.getElementById('cookie-consent-message');
   message.style.display = 'block'; // show the message if not closed yet
 }
-console.log("Hello world!")
+
 
 
