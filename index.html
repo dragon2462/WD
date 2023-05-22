@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="index.css"/>
     <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9895706634055823"
@@ -45,6 +46,10 @@
     <h1>
       <img id="head-image" src="img/sans logo.PNG">
     </h1>
+    <div ng-app="">
+      <p>Name : <input type="text" ng-model="name"></p>
+      <h1>Hello, {{name}}</h1>
+    </div>
     <section>
       
         <p class="animate__animated animate__slideInDown">

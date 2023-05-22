@@ -9,7 +9,7 @@
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="projects.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
@@ -34,27 +34,26 @@
         </div>
       </div>
     </header>
+    <div ng-app="" ng-init="fontSize = '24px'">
+      <p ng-style="{'font-size': fontSize, 'font-weight': 'bold'}">Name: <input type="text" ng-model="name"></p>
+      <p ng-style="{'font-size': fontSize, 'font-weight': 'bold'}">Hello, {{name}}</p>
+    </div>
     <section>
         <h1>
           Projects developed by others:
         </h1>
-        <p>
-          //buttons
-        </p>
+      <p>Testing</p>
+      
         <div></div>
         <h2>
           Projects created by me (Replit):
         </h2>
-        <p>
-          jdk
-        </p>
-        <p>
-          jdd
-        </p>
-        <p>
-          djddjd
-        </p>
-      
+        <div class="button">
+          <a href="https://replit.com/@pzheng2/Hourly-Payroll-Calculator">
+            <div class="image"></div>
+          </a>
+          <p>Hourly Payroll Calculator</p>
+        </div>
     </section>
     <footer>
       <div>

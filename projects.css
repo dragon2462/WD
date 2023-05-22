@@ -125,3 +125,34 @@ header .dropdown-content{
 	  #myBtn:hover {
 		background-color: #555;
 	  }  
+	  .button {
+		display: inline-block;
+		text-align: center;
+		margin: 10px;
+	  }
+	  
+	  .button a {
+		display: block;
+	  }
+	  
+	  .button .image {
+		background-image: url("https://seeklogo.com/images/R/replit-icon-logo-A666709FE9-seeklogo.com.png");
+		background-size: cover;
+		background-color: black;
+		background-position: center;
+		height: 160px;
+		width: 160px;
+		border: 5px groove;
+		border-radius: 5px;
+	  }
+	  
+	  .button p {
+		margin: 1px;
+		padding: 1px;
+		color: black;
+		font-family: Times New Roman;
+		font-size: 18px;
+		font-weight: bold;
+		align-items:flex-start;
+		justify-content: left;
+	  }
