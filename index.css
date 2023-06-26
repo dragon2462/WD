@@ -38,8 +38,11 @@ section{
 	background-blend-mode: darken;
   }
   .message{
-background-color: black;
-color: red;
+	background-color: black;
+	color: red;
+	text-align:center;
+	font-size: 36px;
+	font-family:Arial;
   }
   p3{
 	align-items:stretch;
@@ -50,38 +53,41 @@ color: red;
 	
   }
   .social-media {
-	padding: 1px;
-	margin: 1px;
-	display: flex;
+	display: inline-block, flex;
+    margin: auto;
+    width: max-content;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	color: white;
+
+	border: 2px solid black; /* Adjust the border width and color as needed */
+	border-radius: 10px; /* Adjust the border radius as needed */
+	background-color: white; /* Change the background color to white */
 }
 
 .social-media a {
 	margin: 10px;
-	font-size: 2rem;
+	font-size: 48px; /* Adjust the font size to make the icons larger */
 	text-align: center;
 	display: inline-block;
 	color: var(--main-fonts-color);
-  }
-  
-  .social-media .twitter {
+}
+
+  .social-media .twitter:hover {
 	color: #1DA1F2 !important; /* change this to the desired color */
   }
   
-  .social-media .github {
-	color: black !important; /* change this to the desired color */
+  .social-media .github:hover {
+	color: rgb(56, 55, 55) !important; /* change this to the desired color */
   }
-  .social-media .linkedin{
-	color: blue;
+  .social-media .linkedin:hover{
+	color: blue !important;
   }
-  .social-media .instagram{
-	color: #E4405F;
+  .social-media .instagram:hover{
+	color: #E4405F !important;
   }
-  .social-media .codepen{
-	color: green;
+  .social-media .codepen:hover{
+	color: green !important;
   }
   .social-media a i {
 	cursor: pointer;
@@ -268,12 +274,13 @@ background-color: white;
   }
   
   #myBtn:hover {
-	background-color: black;
+	background-color: white;
+	color: black;
   }  
   #cookie-consent-message {
 	background-color: #f0f0f0;
 	text-align: left;
-	position:fixed;
+	position: fixed;
 	bottom: 20px;
 	left: 20px;
 	padding: 1px;
@@ -281,19 +288,26 @@ background-color: white;
 	height: 185px;
 	max-width: calc(100% - 40px);
 	border-style: ridge;
-	border-color: green;
+	border-color: black;
 	z-index: 9999;
-  }
-  
-  .cookie-consent-button {
-	padding: 5px 10px;
-	background-color: #4CAF50;
+}
+
+.cookie-consent-button {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	padding: 5px 7px;
+	background-color: red;
 	color: #fff;
-	border-style: inset;
-	border-radius: 3px;
 	font-size: 14px;
 	cursor: pointer;
-  }
+	transition: background-color 0.3s ease; /* Add transition for smooth effect */
+}
+
+.cookie-consent-button:hover {
+	background-color: green; /* Change the background color on hover */
+}
+
   #head-image {
 	width: 200px;
 	height: 100px;
@@ -305,10 +319,12 @@ background-color: white;
   footer #copyright-message {
 	font-family: Times New Roman;
 	font-size: 20px;
+	font-style:italic;
 	font-weight: bold;
 	background-color: cyan;
 	text-align: center;
   }
+  
   
   @tailwind base;
 @tailwind components;
