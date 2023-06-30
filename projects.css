@@ -165,3 +165,14 @@ header .dropdown-content{
 		border: 5px groove;
 		border-radius: 5px;
 	  }
+
+	  #Github-Logo {
+		background-image: url("img/github-logo.jpeg");
+		background-size: cover;
+		background-color: black;
+		background-position: center;
+		height: 160px;
+		width: 160px;
+		border: 5px groove;
+		border-radius: 5px;
+	  }
