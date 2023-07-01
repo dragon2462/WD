@@ -1,24 +1,23 @@
 h1{
   color: black;
-  font-family: Times New Roman;
+  font-family:Calibri;
   font-size: 36px;
 }
 
 h2{
-	font-family: 'Times New Roman', Times, serif;
+	font-family: Calibri;
 	font-size: 36px;
 	color: black;
 }
 h2,p{
 	color: black;
 	font-display:inherit;
-	font-family: Times New Roman;
+	font-family: Calibri;
 	font-size: 36px;
 }
 body {
 	margin: 10px;
 	padding: 10px;
-	font-family: sans-serif;
 	background-color: cyan;
 }
 
@@ -39,20 +38,8 @@ header .dropdown-content{
 }
 .logo img {
 	width: 240px;
-	/*border-style:groove;boxing style*/
 	background-color: black;
 }
-/*.dropbtn{
-	background-color: black;
-	color: black;
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-  }
-  .dropdown{
-	position: relative;
-	display: inline-block;
-  }*/
   
   .dropdown-content{
 	display: none;
@@ -149,7 +136,7 @@ header .dropdown-content{
 		margin: 1px;
 		padding: 1px;
 		color: black;
-		font-family: Times New Roman;
+		font-family: Cambria;
 		font-size: 18px;
 		font-weight: bold;
 		align-items:flex-start;
@@ -176,3 +163,16 @@ header .dropdown-content{
 		border: 5px groove;
 		border-radius: 5px;
 	  }
+
+	  footer #copyright-message {
+		font-family: Times New Roman;
+		font-size: 20px;
+		font-style:italic;
+		font-weight: bold;
+		background-color: cyan;
+		text-align: center;
+	}
+	
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
