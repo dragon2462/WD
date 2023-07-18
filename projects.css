@@ -163,15 +163,41 @@ header .dropdown-content{
 		border: 5px groove;
 		border-radius: 5px;
 	  }
-
-	  footer #copyright-message {
-		font-family: Times New Roman;
+	
+	footer #copyright-message {
+		font-family: Georgia;
 		font-size: 20px;
-		font-style:italic;
 		font-weight: bold;
 		background-color: cyan;
 		text-align: center;
+		width: fit-content;
+		margin: 0 auto;
+	}	  
+	.icons {
+		text-align: center;
+		width: fit-content;
+		margin: 0 auto;
+	  }
+	   
+	  .icons p{
+		font-size: 36px;
+		font-family:Verdana;
+	  }
+	  .icons #HTML {
+		color: rgb(250, 164, 6);
+		font-size: 75px;
 	}
+	  
+	  .icons #CSS {
+		color: blue;
+		font-size: 75px;
+	  }
+	  
+	  .icons #JS {
+		color: yellow;
+		font-size: 75px;
+	  }
+	  
 	
 	@tailwind base;
 	@tailwind components;
