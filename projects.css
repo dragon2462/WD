@@ -18,7 +18,7 @@ h2,p{
 body {
 	margin: 10px;
 	padding: 10px;
-	background-color: cyan;
+	background: url("img/Background 1.jpeg") center/cover no-repeat;
 }
 
 header {
@@ -33,17 +33,19 @@ header {
 	padding: 10px 25px;
 	border-style: groove;
 }
-header .dropdown-content{
-	position: absolute, right;
-}
+
 .logo img {
 	width: 240px;
 	background-color: black;
 }
+
+header .dropdown-content{
+	position: absolute, right;
+}
   
   .dropdown-content{
 	display: none;
-	position:absolute;
+	position:fixed;
 	background-color: white;
 	max-width: 85px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -80,15 +82,14 @@ header .dropdown-content{
 	   border-spacing: 12px;
 	 }
 	 
-	 /* Rotate first bar */
 	 .change .bar1 {
 	   transform: translate(0, 11px) rotate(-45deg);
 	 }
 	 
-	 /* Fade out the second bar */
-	 .change .bar2 {opacity: 0;}
+	 .change .bar2 {
+		opacity: 0;
+	}
 	 
-	 /* Rotate last bar */
 	 .change .bar3 {
 	   transform: translate(0, -11px) rotate(45deg);
 	 }

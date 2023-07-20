@@ -3,12 +3,7 @@
 			margin: 10x;
 			padding: 10px;
 			font-family: sans-serif;
-			background-image: url("img/What_is_Information_Technology.jpeg");
-			background-size: cover;
-			background-position:center;
-			background-attachment: absolute;
-			background-blend-mode:lighten;
-			background-repeat: no-repeat;
+			background-color:rgb(119, 119, 118);
 		}
 
 		header {
@@ -23,6 +18,60 @@
 			padding: 10px 20px;
 			border-style: groove;
 		}
+		header .dropdown-content{
+			position: absolute, right;
+		}
+		  
+		  .dropdown-content{
+			display: none;
+			position:fixed;
+			background-color: white;
+			max-width: 85px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+			
+		   }
+		   .dropdown-content a{
+			color: black;
+			padding: 12px 16px;
+			display: block;
+			text-decoration: none;
+		   }
+		   .dropdown-content a:hover{
+		   background-color: darkgray;
+		   }
+		   .dropdown:hover .dropdown-content{
+		   display: block;
+		   }
+		   .dropdown:hover .dropbtn{
+		   background-color: white;
+		   }
+		   .container {
+			   display: block;
+			   cursor: pointer;
+			   font-size: 20px;
+			 }
+			 
+			 .bar1, .bar2, .bar3 {
+			   width: 40px;
+			   height: 5px;
+			   background-color: white;
+			   margin: 6px 0;
+			   transition: 0.4s;
+			   border-spacing: 12px;
+			 }
+			 
+			 .change .bar1 {
+			   transform: translate(0, 11px) rotate(-45deg);
+			 }
+			 
+			 .change .bar2 {
+				opacity: 0;
+			}
+			 
+			 .change .bar3 {
+			   transform: translate(0, -11px) rotate(45deg);
+			 }
 		
 		section{
 			color: white;
@@ -89,81 +138,9 @@
 		
 		.logo img {
 			width: 240px;
-			/*border-style:groove;boxing style*/
 			background-color: black;
 		}
 
-		/*.dropbtn{
-			background-color: black;
-			color: black;
-			padding: 16px;
-			font-size: 16px;
-			border: none;
-		}
-		.dropdown{
-			position: relative;
-			display: inline-block;
-		}*/
-		
-		.dropdown-content{
-			display: none;
-			position:absolute;
-			justify-content:stretch;
-			background-color: white;
-			max-width: 85px;
-			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-			z-index: 1;
-			
-		}
-		.dropdown-content a{
-			color: black;
-			padding: 12px 16px;
-			display: block;
-			text-decoration: none;
-		}
-		.dropdown-content a:hover{
-		background-color: darkgray;
-		}
-		.dropdown:hover .dropdown-content{
-		display: block;
-		}
-		.dropdown:hover .dropbtn{
-		background-color: white;
-		}
-		/*.dropdown::before:hover .dropbtn{
-		background-color: white;	
-		}
-		.dropdown::after .dropbtn{
-			background-color: red;
-		}*/
-		.container {
-			display: block;
-			cursor: pointer;
-			font-size: 20px;
-		}
-		
-		.bar1, .bar2, .bar3 {
-			width: 40px;
-			height: 5px;
-			background-color: white;
-			margin: 6px 0;
-			transition: 0.4s;
-			border-spacing: 12px;
-		}
-		
-		/* Rotate first bar */
-		.change .bar1 {
-			transform: translate(0, 11px) rotate(-45deg);
-		}
-		
-		/* Fade out the second bar */
-		.change .bar2 {opacity: 0;}
-		
-		/* Rotate last bar */
-		.change .bar3 {
-			transform: translate(0, -11px) rotate(45deg);
-		}
-		
 		.box {
 			display: flex;
 			justify-content: center;
@@ -247,7 +224,7 @@
 			background-color: white;
 			color: black;
 		}  
-		#cookie-consent-message {
+		/*#cookie-consent-message {
 			background-color: #f0f0f0;
 			text-align: left;
 			position: fixed;
@@ -271,12 +248,12 @@
 			color: #fff;
 			font-size: 14px;
 			cursor: pointer;
-			transition: background-color 0.3s ease; /* Add transition for smooth effect */
+			transition: background-color 0.3s ease;
 		}
 
 		.cookie-consent-button:hover {
-			background-color: green; /* Change the background color on hover */
-		}
+			background-color: green; 
+		}*/
 
 		#head-image {
 			width: 200px;
