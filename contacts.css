@@ -1,5 +1,5 @@
 body{
-  background-color: white;
+  background-color: grey;
 	margin: 10px;
 	padding: 10px;
 	font-family: Times New Roman;
@@ -111,3 +111,40 @@ header {
   #myBtn:hover {
 	background-color: #555;
   } 
+  footer #copyright-message {
+	font-family: Georgia;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	width: fit-content;
+	margin: 0 auto;
+}	  
+.icons {
+	text-align: center;
+	width: fit-content;
+	margin: 0 auto;
+  }
+  
+  .icons i#HTML img {
+	width: 75px;
+	height: 100px;
+  }
+  
+  .icons i#CSS img {
+	width: 75px;
+	height: 90px;
+	
+  }
+  
+  .icons i#JS img {
+	width: 75px;
+	height: 75px;
+	margin: 5px;
+  }
+  
+  .icons p {
+	font-size: 36px;
+	font-family: Verdana;
+	color: white;
+  }

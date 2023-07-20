@@ -290,7 +290,7 @@
 			font-family: Georgia;
 			font-size: 20px;
 			font-weight: bold;
-			background-color: cyan;
+			color: black;
 			text-align: center;
 			width: fit-content;
 			margin: 0 auto;
@@ -300,27 +300,32 @@
 			width: fit-content;
 			margin: 0 auto;
 		  }
-		   
-		  .icons p{
+		  
+		  .icons i#HTML img {
+			width: 75px;
+			height: 100px;
+		  }
+		  
+		  .icons i#CSS img {
+			width: 75px;
+			height: 90px;
+			
+		  }
+		  
+		  .icons i#JS img {
+			width: 75px;
+			height: 75px;
+			margin: 5px;
+		  }
+		  
+		  .icons p {
 			font-size: 36px;
-			font-family:Verdana;
-		  }
-		  .icons #HTML {
-			color: rgb(250, 164, 6);
-			font-size: 75px;
-		}
-		  
-		  .icons #CSS {
-			color: blue;
-			font-size: 75px;
+			font-family: Verdana;
+			color: white;
 		  }
 		  
-		  .icons #JS {
-			color: yellow;
-			font-size: 75px;
-		  }
 		  
-		
+
 		@tailwind base;
 		@tailwind components;
 		@tailwind utilities;
