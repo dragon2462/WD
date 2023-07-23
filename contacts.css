@@ -111,7 +111,15 @@ header {
   #myBtn:hover {
 	background-color: #555;
   } 
-  footer #copyright-message {
+
+  footer{
+	position: absolute;
+	padding-bottom: 2.5rem;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+  }
+  #copyright-message {
 	font-family: Georgia;
 	font-size: 20px;
 	font-weight: bold;

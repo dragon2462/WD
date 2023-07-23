@@ -164,6 +164,14 @@ header .dropdown-content{
 		border: 5px groove;
 		border-radius: 5px;
 	  }
+
+	  footer{
+		position: absolute;
+		padding-bottom: 2.5rem;
+		bottom: 0;
+		width: 100%;
+		height: 2.5rem; 
+	  }
 	
 	footer #copyright-message {
 		font-family: Georgia;
