@@ -23,7 +23,7 @@ window.addEventListener("load", function() {
     const isLoggedIn = localStorage.getItem("isLoggedIn");
     if (isLoggedIn !== "true") {
         // User is not logged in, redirect to login page
-        window.location.href = "private.html";
+        //window.location.href = "private.html";
     }
 });
 
