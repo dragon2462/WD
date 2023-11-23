@@ -196,12 +196,7 @@ nav {
   display: inherit; /* show the hamburger menu icon by default */
 }
 
-@media (min-width: 768px) {
-  /* hide the hamburger menu icon for screens wider than 768px */
-  .mobile-menu {
-    display: flex;
-  }
-}
+
 #myBtn {
   display: flex;
   position: fixed;
@@ -298,6 +293,4 @@ footer #copyright-message {
   color: white;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+

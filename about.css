@@ -247,6 +247,3 @@ h1 {
   color: white;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
