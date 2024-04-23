@@ -1,11 +1,16 @@
+html{
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
 body {
-  margin: 10px;
-  padding: 10px;
+  
   font-family: sans-serif;
-  background-color: rgb(150, 146, 146);
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+  background-color: silver;
 }
 
 h1 {
@@ -13,6 +18,14 @@ h1 {
   font-family: Times New Roman;
   font-size: 36px;
   background: fixed;
+}
+h1 {
+  font-size: 48px;
+  color: white;
+  font-style: bold;
+  text-shadow: #555;
+  text-decoration: solid;
+  font-family: Times New Roman;
 }
 
 #text {
@@ -25,7 +38,7 @@ h1 {
 
 header {
   background-color: black;
-  color: black;
+  margin: 20;
   font-family: Times New Roman;
   font-size: 18px;
   display: flex;
@@ -36,6 +49,17 @@ header {
   border-style: groove;
 }
 
+#headertext{
+  color: white;
+  font-size: 36px;
+}
+
+#header-button{
+ margin: 20;
+ padding: 20;
+ height: 5vh;
+ width: 15w;
+}
 .logo img {
   width: 240px;
   background-color: black;
@@ -97,55 +121,8 @@ header {
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
-.work {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
 
-.card {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-  width: 200px;
-  height: 250px;
-  border-radius: 12px;
-  background: var(--main-decor-color);
-  border-style: ridge;
-  border-color: black;
-  background-color: black;
-}
 
-.card img {
-  width: 100%;
-  height: 70%;
-  border-radius: 10px 10px 0px 0px;
-}
-
-.card .work-content {
-  text-align: center;
-  padding: 10px 5px;
-  font-size: 1rem;
-  color: var(--main-fonts-color);
-  font-family: var(--main-font-family);
-  cursor: pointer;
-}
-
-.card a {
-  text-decoration: none;
-  color: red;
-}
-
-.card .work-content:hover {
-  color: white;
-}
-
-.card:hover {
-  box-shadow: 0 0 1.5rem gray;
-}
 #myBtn {
   display: flex;
   position: fixed;
@@ -178,72 +155,37 @@ header {
   }
 }
 
-h1 {
-  font-size: 48px;
-  color: white;
-  font-style: bold;
-  text-shadow: #555;
-  text-decoration: solid;
-  font-family: Times New Roman;
-}
-
-#iframe-container-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: fit-content;
-  margin: 0 auto;
-}
-
-.iframe-container {
-  border: 5px solid red;
-  border-radius: 5px;
-  overflow: hidden;
-  width: calc(50% - 20px);
-  max-width: 360px;
-  margin: 10px;
-}
-
-@media (max-width: 767px) {
-  .iframe-container {
-    width: 100%;
-  }
-}
-
 #copyright-message {
   font-family: Georgia;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
-  background-color: cyan;
   text-align: center;
-  width: fit-content;
-  margin: 0 auto;
+  color: white;
+  margin: 10px; /* Add some margin for better spacing */
 }
-.icons {
+
+#dragon {
+  color: darkred;
+}
+
+.icons{
+
+  align-items: center;
   text-align: center;
-  width: fit-content;
-  margin: 0 auto;
 }
-
-.icons i#HTML img {
-  width: 75px;
-  height: 100px;
-}
-
-.icons i#CSS img {
-  width: 75px;
-  height: 90px;
-}
-
+.icons i#HTML img,
+.icons i#CSS img,
 .icons i#JS img {
-  width: 75px;
-  height: 75px;
-  margin: 5px;
+  width: 105px;
+  height: auto; /* Use auto for responsive height */
+  margin: 2.5px;
+  
 }
 
 .icons p {
-  font-size: 36px;
+  font-size: 24px; /* Adjust the font size as needed */
   font-family: Verdana;
   color: white;
+  text-align: center;
+  margin: 5px; /* Add margin for better spacing */
 }
-
