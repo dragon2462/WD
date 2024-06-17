@@ -1,96 +1,74 @@
+@keyframes gradientAnimation {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+  }
+
 html{
   scroll-behavior: smooth;
+  background: linear-gradient(to right, #0700DE, #DDFFC9);	background-size: 200% 200%; /* Double the size for smoother transition */
+	animation: gradientAnimation 10s ease infinite;
 }
 body {
-  margin: 10x;
+  margin: 10px;
   padding: 10px;
   font-family: sans-serif;
-  background-color: rgb(119, 119, 118);
+  display: grid;
+
+  min-height: 100vh;
+}
+header{
+  margin: auto 0;
+  padding: auto 0;
+}
+nav {
+  border: none; 
+  border-radius: 50px;
+  padding: 5px 5px; 
+  background-color: rgba(0, 0, 0, 0.5); 
 }
 
-header {
-  background-color: black;
-  color: black;
-  font-family: Times New Roman;
-  font-size: 18px;
+nav ul {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  border-style: groove;
-}
-header .dropdown-content {
-  position: absolute, right;
+  list-style: none;
+  gap: 30px;      
+  justify-content: center; 
+  align-items: center;     
 }
 
-.dropdown-content {
-  display: none;
-  position: fixed;
-  background-color: white;
-  max-width: 85px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  display: block;
-  text-decoration: none;
-}
-.dropdown-content a:hover {
-  background-color: darkgray;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.dropdown:hover .dropbtn {
-  background-color: white;
-}
-.container {
-  display: block;
-  cursor: pointer;
-  font-size: 20px;
+nav ul li a { 
+  color: inherit;          
+  text-decoration: none;   
+  font-weight: 600;
+  font-size: 24px;         
+  transition: color 0.3s linear; 
+  color: crimson;
 }
 
-.bar1,
-.bar2,
-.bar3 {
-  width: 40px;
-  height: 5px;
-  background-color: white;
-  margin: 6px 0;
-  transition: 0.4s;
-  border-spacing: 12px;
+nav ul li a:hover {
+  color: red;          
 }
 
-.change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
+button{
+  background-color: transparent;
+  border: none;
 }
 
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
+main p{
+  font-size: 36px;
 }
 
 section {
   color: white;
   font-family: Times New Roman;
   font-size: 36px;
-  background-blend-mode: darken;
 }
 
 .message {
-  background-color: black;
   color: red;
   text-align: center;
   font-size: 36px;
   font-family: Arial;
-  width: fit-content;
-  margin: 0 auto;
 }
 
 .social-media {
@@ -138,11 +116,6 @@ section {
   text-shadow: 0 0 50px var(--main-decor-color);
 }
 
-.logo img {
-  width: 240px;
-  background-color: black;
-}
-
 .box {
   display: flex;
   justify-content: center;
@@ -184,9 +157,6 @@ section {
   max-width: 100%;
   max-height: 100%;
 }
-nav {
-  display: none; /* hide the navigation menu by default */
-}
 
 @media (min-width: 768px) {
   /* show the navigation menu for screens wider than 768px */
@@ -194,11 +164,6 @@ nav {
     display: block;
   }
 }
-
-.mobile-menu {
-  display: inherit; /* show the hamburger menu icon by default */
-}
-
 
 #myBtn {
   display: flex;
@@ -220,49 +185,7 @@ nav {
   background-color: white;
   color: black;
 }
-/*#cookie-consent-message {
-			background-color: #f0f0f0;
-			text-align: left;
-			position: fixed;
-			bottom: 20px;
-			left: 20px;
-			padding: 1px;
-			width: 100px;
-			height: 185px;
-			max-width: calc(100% - 40px);
-			border-style: ridge;
-			border-color: black;
-			z-index: 9999;
-		}
 
-		.cookie-consent-button {
-			position: absolute;
-			bottom: 5px;
-			right: 5px;
-			padding: 5px 7px;
-			background-color: red;
-			color: #fff;
-			font-size: 14px;
-			cursor: pointer;
-			transition: background-color 0.3s ease;
-		}
-
-		.cookie-consent-button:hover {
-			background-color: green; 
-		}*/
-
-#head-image {
-  width: 200px;
-  height: 100px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media only screen and (max-width: 600px) {
-  .icons img {
-    width: 30px; /* Adjust the image size for smaller screens */
-  }
-}
 footer #copyright-message {
   font-family: Georgia;
   font-size: 20px;
@@ -300,4 +223,67 @@ footer #copyright-message {
   color: white;
 }
 
+.button {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  }
+  
+  .button a {
+  display: block;
+  }
+
+  .button_blog p {
+  margin: 1px;
+  padding: 1px;
+  color: black;
+  font-family: Cambria;
+  font-size: 18px;
+  font-weight: bold;
+  align-items:flex-start;
+  justify-content: left;
+  }
+  
+  .button .image {
+  background-image: url("https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=1200/api/page/5393602882568192/image/download/6038586442907648");
+  background-size: cover;
+  background-color: black;
+  background-position: center;
+  height: 160px;
+  width: 160px;
+  border: 5px groove;
+  border-radius: 5px;
+  }
+  
+  .button p {
+  margin: 1px;
+  padding: 1px;
+  color: black;
+  font-family: Cambria;
+  font-size: 18px;
+  font-weight: bold;
+  align-items:flex-start;
+  justify-content: left;
+  }
+  .button .button-replit .image{
+  background-image: url("https://seeklogo.com/images/R/replit-icon-logo-A666709FE9-seeklogo.com.png");
+  background-size: cover;
+  background-color: black;
+  background-position: center;
+  height: 160px;
+  width: 160px;
+  border: 5px groove;
+  border-radius: 5px;
+  }
+
+  #Github-Logo {
+  background-image: url("img/github-logo.jpeg");
+  background-size: cover;
+  background-color: black;
+  background-position: center;
+  height: 160px;
+  width: 160px;
+  border: 5px groove;
+  border-radius: 5px;
+  }
 

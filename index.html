@@ -21,41 +21,23 @@
      crossorigin="anonymous"></script>
    
   </head>
+  <header>
+    <nav>
+      <ul>
+         <li><button><a href="#">About</a></button></li>
+          <li><button><a href="#">Contact</a></button></li>
+          <li><button><a href="#projects">Projects</a></button></li>
+      </ul>
+    </nav>
+  </header>
   <body>
-    <header>
-      <div class="logo">
-        <img src="img/Capture.PNG">
-      </div>
-  
-      <div class="mobile-menu">
-        <div class="fas fa-bars"></div>
-      <div class="dropdown">
-        <div class="container" onclick="myFunction(this)">
-         
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-        <div class="dropdown-content">
-          <a href="index.html">Home</a>
-          <a href="about-me.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a href="projects.html">Projects</a>
-        </div>
-      </div>
-      </div>
-      
-    </header>
-    
-    <section>
-      
-        <p class="animate__animated animate__slideInDown">
-      
-        Hi there! Welcome to my website, 
-        where I have contained my projects (finished and ongoing), some facts about myself, and contact information. Feel free to browse via the navigation in the upper right hand corner. Enjoy!
+    <main>
+      <p>
+      Hello, all! <br>
+        This is my portfolio site, which is currently under construction.
+        
       </p>
-  <!---div+#page>p.title Emmet--->
-      </section>
+    </main>
       <div class="social-media">
 			  
 			  <a class="twitter" href="https://www.twitter.com/paulzheng_" target="_blank"><i class='fab fa-twitter'></i></a>
@@ -64,7 +46,7 @@
 			  <a class="instagram" href="https://www.instagram.com/paul.zheng_" target="_blank"><i class='fab fa-instagram'></i></a>
 		    <a class="codepen" href="https://www.codepen.io/dragon2462" target="_blank"><i class='fab fa-codepen'></i></a>  
       </div>
-     <br>
+      <br>
       <div class="message">
         Currently only desktop friendly
       </div>
@@ -74,12 +56,47 @@
 
  <span></span>
  <br></br>
-
+ <section id="projects">
+  <h1>
+    Projects developed by others:
+  </h1>
+  <div class="button">
+    <div class="button-replit">
+    <a href="https://replit.com/@pzheng2/Calculator" target="_blank">
+      <div class="image"></div>
+    </a>
+    <p>Simple Calculator</p>
+  </div>
+</div>
+  
+  <h2>
+    Projects created by me:
+  </h2>
+  <div class="button_blog">
+      <a href="https://dragon2462.github.io/Wiki/" target="_blank">
+        <img src="img/Blog.png" style="min-width: 50vw; max-width: 75vw; border-style: groove; border-color: white;" alt="blog">
+      </a>
+      <p>My Blog</p>
+      </div>
+    </div>
+      
+  <div class="button">
+    <a href="https://replit.com/@pzheng2/Hourly-Payroll-Calculator" target="_blank">
+      <div class="image"></div>
+    </a>
+    <p>Payroll Calculator</p>
+  </div>
+  <div class="button">
+    <a href="https://dragon2462.github.io/HTML-Game/" target="_blank">
+      <div id="Github-Logo"></div>
+    </a>
+    <p>Simple HTML Game</p>
+  </div>
+</section>
     <footer>
-       <div>
-      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-    </div>    
-    <div class="icons">
+       <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>   
+    
+       <div class="icons">
       <p>Built with 
       <i id="HTML"><img src="img/HTML logo.png" alt="HTML"></i>
       <i id="CSS"><img src="img/CSS Logo.png" alt="CSS"></i>

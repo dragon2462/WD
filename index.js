@@ -1,54 +1,33 @@
+   // Get the button
+   var mybutton = document.getElementById("myBtn");
 
-
-navLinks.forEach((link, index) => {
-    if (link.style.animation) {
-        link.style.animation = "";
-    } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7+1}s`;
+   function scrollFunction() {
+       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           mybutton.style.display = "block";
+       } else {
+           mybutton.style.display = "none";
        }
-    });
-    // Smooth scroll effect for internal links
-$(document).on('click', 'a[href^="#"]', function(event) {
-    event.preventDefault();
-    $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
-    }, 1000);
-  });
-  const mobileMenu = document.querySelector('.mobile-menu');
-const nav = document.querySelector('nav');
+   }
 
-mobileMenu.addEventListener('click', () => {
-  nav.classList.toggle('active'); /* toggle the visibility of the navigation menu */
-});
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+   // When the user clicks on the button, scroll to the top of the document
+   function topFunction() {
+    const scrollDuration = 1000; // Total duration of the scroll in milliseconds
+    const scrollStep = -window.scrollY / (scrollDuration / 15); // Calculate the step size
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.display = "block";
-  } else {
-    document.getElementById("myBtn").style.display = "none";
+    const scrollInterval = setInterval(() => {
+        if (window.scrollY !== 0) {
+            window.scrollBy(0, scrollStep);
+        } else {
+            clearInterval(scrollInterval);
+        }
+    }, 15);
   }
-}
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  function smoothScroll(targetId) {
+    const targetElement = document.getElementById(targetId);
+    const targetPosition = targetElement.offsetTop;
+    window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+    });
 }
-function closeCookieConsent() {
-  var message = document.getElementById('cookie-consent-message');
-  message.style.display = 'none'; // hide the message
-  localStorage.setItem('cookie-consent-closed', 'true'); // set the message to closed in localStorage
-}
-
-// Check if the user has already closed the message
-if (localStorage.getItem('cookie-consent-closed') === 'true') {
-  var message = document.getElementById('cookie-consent-message');
-  message.style.display = 'none'; // hide the message if already closed
-} else {
-  var message = document.getElementById('cookie-consent-message');
-  message.style.display = 'block'; // show the message if not closed yet
-}
-
-
