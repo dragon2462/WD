@@ -60,7 +60,7 @@ nav ul li a {
   text-decoration: none;
   font-weight: 600;
   font-size: 24px;  
-  transition: color 0.3s linear;
+  transition: color 0.1s ease;
   color: gray;
   font-family: 'Calibri';
 }
@@ -154,7 +154,6 @@ section {
   border-style: solid;
 }
 
-
 #myBtn {
   display: flex;
   position: fixed;
@@ -213,72 +212,32 @@ footer #copyright-message {
   color: white;
 }
 
-.button {
-  display: inline-block;
+#myProjects #largeProjects {
+  display: flex;
+  flex-direction: row; /* Arrange items in a row */
+  gap: 12px;
   text-align: center;
-  margin: 10px;
-  }
-  
-  .button a {
-  display: block;
-  }
+  font-size: 24px;
 
-  .button_blog p {
-  margin: 1px;
-  padding: 1px;
-  color: white;
-  font-family: 'Cambria';
-  font-size: 18px;
-  font-weight: bold;
-  align-items:flex-start;
-  justify-content: left;
-  }
-  
-  .button .image {
-  background-image: url("https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=1200/api/page/5393602882568192/image/download/6038586442907648");
-  background-size: cover;
-  background-color: white;
-  background-position: center;
-  height: 160px;
-  width: 160px;
-  border: 5px groove;
-  border-radius: 5px;
-  }
-  
-  .button p {
-  margin: 1px;
-  padding: 1px;
-  color: white;
-  font-family: 'Cambria';
-  font-size: 18px;
-  font-weight: bold;
-  align-items:flex-start;
-  justify-content: left;
-  }
-  .button .button-replit .image{
-  background-image: url("https://seeklogo.com/images/R/replit-icon-logo-A666709FE9-seeklogo.com.png");
-  background-size: cover;
-  background-color: black;
-  background-position: center;
-  height: 160px;
-  width: 160px;
-  border: 5px groove;
-  border-radius: 5px;
-  }
+}
 
-  #Github-Logo {
-  background-image: url("img/github-logo.jpeg");
-  background-size: cover;
-  background-color: white;
-  background-position: center;
-  height: 160px;
-  width: 160px;
-  border: 5px groove;
-  border-radius: 5px;
-  }
+#myProjects #largeProjects img{
+  width: 200px;  /* Set the desired width */
+  height: 150px; /* Set the desired height */
+}
 
-#projects{
-  display:list-item;
-  border: 2px transparent groove;
-  justify-content: center;
+#myProjects #largeProjects img[alt*="A simple parody game made with HTML/CSS/JS"]{
+  width: 225px;
+  height: 155px;
+}
+
+#vscode {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+#vscode img {
+  width: 400px; /* Set the desired width */
+  margin: 0 auto; /* Center the image horizontally */
 }
