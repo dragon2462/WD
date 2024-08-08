@@ -14,6 +14,12 @@
   100%{font-size:xx-large;}
 }
 
+@keyframes slide{
+  to{
+    translate: calc(-4 * 250px);
+  }
+}
+
 html{
   scroll-behavior: smooth;
   background: linear-gradient(to right, rgb(1, 1, 109), rgb(14, 14, 14));	background-size: 200% 200%; 
@@ -22,8 +28,6 @@ html{
   padding: auto 0;
 }
 body {
-  margin: 10px;
-  padding: 10px;
   font-family: sans-serif;
   display: grid;
   min-height: 100vh;
@@ -36,6 +40,9 @@ header{
   padding: auto 1;
 }
 
+h1{
+  font-size: 36px;
+}
 nav {
   border: none;
   border-radius: 50px;
@@ -69,28 +76,12 @@ nav ul li a {
 
 nav ul li a:hover{
   color: white;
+  font-size: 36px;
 }
 
 button{
   background-color: transparent;
   border: none;
-}
-
-main p{
-  font-size: 36px;
-}
-
-section {
-  color: white;
-  font-family: Times New Roman;
-  font-size: 36px;
-}
-
-.message {
-  color: white;
-  text-align: center;
-  font-size: 36px;
-  font-family: Arial;
 }
 
 .social-media {
@@ -103,6 +94,7 @@ section {
   border: 2px solid black; 
   border-radius: 10px; 
   background-color: white; 
+  margin-top: 15vh;
 }
 
 .social-media a {
@@ -199,20 +191,12 @@ footer #copyright-message {
   color: white;
 }
 
-#w3_js{
-  font-size: 64px;
-  color: green;
-  font-weight: bold;
-  font-family: 'Calibri'
-}
-
 #myProjects #largeProjects {
   display: flex;
   flex-direction: row; /* Arrange items in a row */
   gap: 12px;
   text-align: center;
   font-size: 24px;
-
 }
 
 #myProjects #largeProjects img{
@@ -225,13 +209,38 @@ footer #copyright-message {
   height: 155px;
 }
 
-#vscode {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
+#scrollUp{
+  border-radius: 25px 25px 25px 25px;
+  border-width: 100px;
+  background-color: white;
+  text-decoration: none;
+  padding: 15px;
 }
 
-#vscode img {
-  width: 400px; /* Set the desired width */
-  margin: 0 auto; /* Center the image horizontally */
+#scrollUp:hover{
+  background-color: black;
+  color: white;
+}
+
+.carousel{
+  overflow: hidden;
+  width: 600px;
+  margin-top: 5vh;
+  display: flex;
+}
+
+.wrap{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 250px;
+  justify-items: stretch;
+  animation: slide 5s infinite linear;
+  animation-timing-function: ease-in-out;
+  }
+
+.wrap img{
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit:contain;
 }
