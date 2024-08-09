@@ -20,12 +20,24 @@
   }
 }
 
+@keyframes changing-color{
+  0%{
+    color: white;
+  }
+  50%{
+    color: red;
+  }
+  100%{
+    color: silver;
+  }
+}
+
 html{
   scroll-behavior: smooth;
   background: linear-gradient(to right, rgb(1, 1, 109), rgb(14, 14, 14));	background-size: 200% 200%; 
-	animation: gradientAnimation 10s ease infinite;
-  margin: auto 0;
-  padding: auto 0;
+	animation: gradientAnimation 10s linear infinite;
+  margin: auto 5px;
+  padding: auto 5px;
 }
 body {
   font-family: sans-serif;
@@ -42,7 +54,9 @@ header{
 
 h1{
   font-size: 36px;
+  animation: changing-color 5s ease infinite;
 }
+
 nav {
   border: none;
   border-radius: 50px;
@@ -76,7 +90,7 @@ nav ul li a {
 
 nav ul li a:hover{
   color: white;
-  font-size: 36px;
+  font-size: 26px;
 }
 
 button{
@@ -224,9 +238,11 @@ footer #copyright-message {
 
 .carousel{
   overflow: hidden;
-  width: 600px;
+  width: 100vw;
   margin-top: 5vh;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .wrap{
