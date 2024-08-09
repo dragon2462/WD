@@ -240,7 +240,7 @@ footer #copyright-message {
   overflow: hidden;
   width: 100vw;
   margin-top: 5vh;
-  display: flex;
+  display: grid;
   margin: 0;
   padding: 0;
 }
